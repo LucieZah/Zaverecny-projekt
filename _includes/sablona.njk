@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="menu__main">
+      <button class="button">
+        <a href="/" class="menu__link">HTML a CSS</a>
+      </button>
+      <button class="button">
+        <a href="/html/" class="menu__link">HTML</a>
+      </button>
+      <button class="button">
+        <a href="/css/" class="menu__link">CSS</a>
+      </button>
+    </div>
+
+    <main>
+      {{ content | safe }}
+    </main>
+  </body>
+
+  <footer class="footer">lucie.zahalkova@protonmail.com</footer>
+</html>
