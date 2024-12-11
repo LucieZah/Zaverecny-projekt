@@ -3,87 +3,111 @@ layout: sablona.njk
 title: HTML
 ---
 
-    <h1 class="title">HTML</h1>
+<div class="page__html">
+  <h1 class="title">HTML</h1>
 
-    <p>
-      HTML (HyperText Markup Language) je základní jazyk pro tvorbu webových
-      stránek, který určuje strukturu a obsah stránky pomocí značek (tagů).
-      Umožňuje přidávat text, obrázky, odkazy a další prvky které prohlížeče
-      interpretují a zobrazují uživatelům.
-    </p>
+  <p>
+    HTML (HyperText Markup Language) je základní jazyk pro tvorbu webových
+    stránek, který určuje strukturu a obsah stránky pomocí značek (tagů).
+    Umožňuje přidávat text, obrázky, odkazy a další prvky které prohlížeče
+    interpretují a zobrazují uživatelům.
+  </p>
 
-    <ul class="menu__page">
-      <li>Základní struktura stránky</li>
-      <li>Komentář</li>
-      <li>Členění obsahu</li>
-      <li>Nadpisy</li>
-      <li>Odstavec</li>
-      <li>Odkaz</li>
-      <li>Odkaz na mail</li>
-      <li>Zalomení řádku</li>
-      <li>Zvýraznění</li>
-      <li>Obrázky</li>
-      <li>Tabulka</li>
-      <li>Seznam</li>
-    </ul>
-    <h2>Základní struktura stránky</h2>
-    <p>
-      Do prázdného souboru index.html zadej ! a stiskni Tab nebo Enter a editor
-      kódu (např. Visual Studio Code) automaticky doplní základní HTML
-      strukturu.
-    </p>
+  <ul class="menu__page">
+    <li>Základní struktura stránky</li>
+    <li>Komentář</li>
+    <li>Členění obsahu</li>
+    <li>Nadpisy</li>
+    <li>Odstavec</li>
+    <li>Odkaz</li>
+    <li>Odkaz na mail</li>
+    <li>Zalomení řádku</li>
+    <li>Zvýraznění</li>
+    <li>Obrázky</li>
+    <li>Tabulka</li>
+    <li>Seznam</li>
+  </ul>
+  <h2>Základní struktura stránky</h2>
+  <p>
+    Do prázdného souboru index.html zadej ! a stiskni Tab nebo Enter a editor
+    kódu (např. Visual Studio Code) automaticky doplní základní HTML strukturu.
+  </p>
 
-    <h2>Komentář</h2>
-    <p>&lt;!--poznámka--&gt;</p>
-    <p>Může být i víceřádkový.</p>
+  <img
+    class="image__structure"
+    src="/images/doctype.png"
+    alt="Základní struktura stránky"
+  />
 
-    <h2>Členění obsahu pomocí sémantických značek</h2>
-    Hlavička stránky Sekce Patička &lt;header&gt; ..... &lt;/header&gt;
-    &lt;section&gt; ..... &lt;/section&gt; &lt;footer&gt; ..... &lt;/footer&gt;
+  <h2>Komentář</h2>
+  <p>&lt;!--poznámka--&gt;</p>
+  <p>Může být i víceřádkový.</p>
 
-    <h2>Nadpisy</h2>
-    <p>&lt;h1&gt;Text nadpisu&lt;/h1&gt;</p> <p>Další úrovně nadpisů: &lt;h2&gt;,
-    &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</p>
+  <h2>Členění obsahu pomocí sémantických značek</h2>
+  Hlavička stránky Sekce Patička &lt;header&gt; ..... &lt;/header&gt;
+  &lt;section&gt; ..... &lt;/section&gt; &lt;footer&gt; ..... &lt;/footer&gt;
 
-    <h2>Odstavec</h2>
-    &lt;p&gt;Text odstavce&lt;/p&gt;
+  <h2>Nadpisy</h2>
+  <p>&lt;h1&gt;Text nadpisu&lt;/h1&gt;</p>
+  <p>
+    Další úrovně nadpisů: &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;,
+    &lt;h6&gt;
+  </p>
 
-    <h2>Odkaz</h2>
-    &lt;a href=”www.webovaadresa”&gt;Text odkazu&lt;/a&gt;
+  <h2>Odstavec</h2>
+  &lt;p&gt;Text odstavce&lt;/p&gt;
 
-    <h2>Odkaz na mail</h2>
-    &lt;a href=”mailto:mujmail@mail.com”&gt;Text&lt;/a&gt;
+  <h2>Odkaz</h2>
+  &lt;a href=”www.webovaadresa”&gt;Text odkazu&lt;/a&gt;
 
-    <h2>Zalomení řádku</h2>
+  <h2>Odkaz na mail</h2>
+  &lt;a href=”mailto:mujmail@mail.com”&gt;Text&lt;/a&gt;
 
-    &lt;p&gt;
-    <p>
-      jmeno&lt;br&gt;<br />
-      ulice&lt;br&gt;<br />
-      mesto
-    </p>
-    &lt;/p&gt;
+  <h2>Zalomení řádku</h2>
 
-    <h2>Zvýraznění</h2>
-    <p>
-      &lt;strong&gt;<strong>Text....</strong>&lt;/strong&gt; v textu vypadá
-      <strong>tučně</strong>
-    </p>
-    <p>&lt;em&gt;<em>Text....</em>&lt;/em&gt; v textu je <em>kurzívou</em></p>
+  &lt;p&gt;
+  <p>
+    jmeno&lt;br&gt;<br />
+    ulice&lt;br&gt;<br />
+    mesto
+  </p>
+  &lt;/p&gt;
 
-    <h2>Obrázky</h2>
-    <p>
-      &lt;img src = “foto.jpg”&gt; Zadej název obrázku včetně cesty (např.
-      obrazky/foto.jpg).
-    </p>
-    <p>&lt;img src = “foto.jpg” alt=Podzimní les&gt;</p>
+  <h2>Zvýraznění</h2>
+  <p>
+    &lt;strong&gt;<strong>Text....</strong>&lt;/strong&gt; v textu vypadá
+    <strong>tučně</strong>
+  </p>
+  <p>&lt;em&gt;<em>Text....</em>&lt;/em&gt; v textu je <em>kurzívou</em></p>
 
-    <h2>Tabulka</h2>
-    &lt;table&gt; &lt;tr&gt; &lt;th&gt;Text&lt;/th&gt; &lt;th&gt;Text&lt;/th&gt;
-    &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Text&lt;/td&gt; &lt;td&gt;Text&lt;/td&gt;
-    &lt;/tr&gt; &lt;/table&gt;
+  <h2>Obrázky</h2>
+  <p>
+    &lt;img src = “foto.jpg”&gt; Zadej název obrázku včetně cesty (např.
+    obrazky/foto.jpg).
+  </p>
+  <p>&lt;img src = “foto.jpg” alt=Podzimní les&gt;</p>
 
-    <h2>Seznam</h2>
-    &lt;ul&gt; &lt;li&gt;Bla&lt;/li&gt; &lt;li&gt;Blabla&lt;/li&gt; &lt;/ul&gt;
-    ul { list-style:none; } Bla Blabla Bla Blabla tr = table row th = table
-    header td = table data
+  <h2>Tabulka</h2>
+  <pre>
+  &lt;table&gt;
+      &lt;tr&gt; 
+        &lt;th&gt;Text&lt;/th&gt; 
+        &lt;th&gt;Text&lt;/th&gt;
+      &lt;/tr&gt; 
+      &lt;tr&gt; 
+        &lt;td&gt;Text&lt;/td&gt; 
+        &lt;td&gt;Text&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</pre
+  >
+<ul>
+  <li>tr = table row</li> 
+  <li>th = table header</li> 
+  <li>td = table data</li>
+</ul>
+
+  <h2>Seznam</h2>
+  &lt;ul&gt; &lt;li&gt;Bla&lt;/li&gt; &lt;li&gt;Blabla&lt;/li&gt; &lt;/ul&gt; ul
+  { list-style:none; } Bla Blabla Bla Blabla
+</div>

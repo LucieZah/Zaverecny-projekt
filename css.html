@@ -2,3 +2,96 @@
 layout: sablona.njk
 title: CSS
 ---
+<div class="page__css">
+<h1 class="title">CSS</h1>
+
+<p>CSS (Cascading Style Sheets) je jazyk pro stylování webových stránek, který umožňuje upravovat vzhled HTML elementů - například
+    barvy, písma nebo rozložení.</p>
+
+    <ul class="menu__page">
+        <li>Připojení CSS</li>
+        <li>Komentář</li>
+        <li>Syntaxe CSS</li>
+        <li>Vlastnosti</li>
+    </ul>
+
+    <h2>Připojení CSS</h2>
+<p>CSS s HTML propoj tak, že na konci <head> v index.html zapiš:</p>
+
+  <p>&lt;link rel=”stylesheet” href=”style.css”&gt;</p>
+
+  <h2>Komentář</h2>
+/*Text komentáře*/
+<h2>CSS</h2>
+<p>Syntaxe CSS je způsob, jakým se v CSS stylují HTML prvky. Skládá se ze tří částí:</p> 
+<p>Selektor - určuje, na které HTML elementy se daný styl aplikuje (např. h1, .class...)</p>
+<p>Vlastnost - definuje, co chceme na elementu změnit (např. color, font-family...)</p>
+<p>Hodnota - nastavuje konkrétní styl pro vlastnost (např. color: purple; font-family: roboto;...)</p>
+
+<p>příklad zápisu:<br>
+   h1 {<br>
+         color: blue;<br>
+         backround-color:grey;<br>
+   }</p>
+
+<p>Vícenásobný selektor:<br> 
+    h1,<br>
+    a,<br>
+    .text {<br>
+             font-family:roboto;<br>
+     }</p>
+
+<p>Selektor * vybírá všechny prvky na stránce. (Má nejnižší specificitu.)</p>
+
+<h2>Vlastnosti</h2>
+
+<table class="table">
+ <tr>
+    <td>Velikost písma</td>
+    <td>font-size: 24px;</td>
+</tr>
+<tr>
+    <td>Výška řádku</td>
+    <td>line-height: 30px; 
+        line-height: 2;   (Doporučená hodnota pro běžný text je 1.5 - 1.8.)
+        </td>
+</tr>
+<tr>
+    <td>Tloušťka písma</td>
+    <td>font-weight: normal;   (bold)</td>
+</tr>
+<tr>
+    <td>Sklon písma</td>
+    <td>font-style: normal;    (italic - kurzíva, oblique - skloněné písmo)</td>
+</tr>
+<tr>
+    <td>Písmo</td>
+    <td>font-family: Roboto, Sans-Serif;</td>
+</tr>
+<tr>
+    <td>Zarovnání textu</td>
+    <td>text-align: center;    (left, right, justify)</td>
+</tr>
+<tr>
+    <td>Barva textu</td>
+    <td>color: blueviolet;   (#8826e3)</td>
+</tr>
+<tr>
+    <td>Barva pozadí</td>
+    <td>backgroung-color: aliceblue;   (rgb(148, 164, 177))</td>
+</tr>
+<tr>
+    <td>Podtržení textu</td>
+    <td>text-decoration: underline;    (none, dotted...)</td>
+</tr>
+<tr>
+    <td>Margin</td>
+    <td>margin: 20px;</td>
+</tr>
+<tr>
+    <td>Padding</td>
+    <td>padding: 15px;</td>
+</tr>
+</table>
+
+</div>
