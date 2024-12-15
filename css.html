@@ -2,48 +2,47 @@
 layout: sablona.njk
 title: CSS
 ---
+
 <div class="page__css">
-<h1 class="title">CSS</h1>
+<h1 class="page__title">CSS</h1>
 
 <p>CSS (Cascading Style Sheets) je jazyk pro stylování webových stránek, který umožňuje upravovat vzhled HTML elementů - například
     barvy, písma nebo rozložení.</p>
 
-    <ul class="menu__page">
-        <li>Připojení CSS</li>
-        <li>Komentář</li>
-        <li>Syntaxe CSS</li>
-        <li>Vlastnosti</li>
-    </ul>
 
-    <h2>Připojení CSS</h2>
-<p>CSS s HTML propoj tak, že na konci <head> v index.html zapiš:</p>
+    <h2 class="page__subtitle">Připojení CSS</h2>
+<p>CSS s HTML propoj tak, že na konci &lt;head&gt; v index.html zapiš:</p>
 
   <p>&lt;link rel=”stylesheet” href=”style.css”&gt;</p>
 
-  <h2>Komentář</h2>
+  <h2 class="page__subtitle">Komentář</h2>
 /*Text komentáře*/
-<h2>CSS</h2>
+<h2 class="page__subtitle">CSS</h2>
 <p>Syntaxe CSS je způsob, jakým se v CSS stylují HTML prvky. Skládá se ze tří částí:</p> 
 <p>Selektor - určuje, na které HTML elementy se daný styl aplikuje (např. h1, .class...)</p>
 <p>Vlastnost - definuje, co chceme na elementu změnit (např. color, font-family...)</p>
 <p>Hodnota - nastavuje konkrétní styl pro vlastnost (např. color: purple; font-family: roboto;...)</p>
 
-<p>příklad zápisu:<br>
-   h1 {<br>
-         color: blue;<br>
-         backround-color:grey;<br>
-   }</p>
-
-<p>Vícenásobný selektor:<br> 
-    h1,<br>
-    a,<br>
-    .text {<br>
-             font-family:roboto;<br>
+<pre>
+<p>příklad zápisu:  
+    h1 {
+        color: blue;
+        background-color:grey;
+    }
+</p>
+</pre>
+<pre>
+<p>Vícenásobný selektor:
+    h1,
+    a,
+    .text {
+        font-family:roboto;
      }</p>
+</pre>
 
 <p>Selektor * vybírá všechny prvky na stránce. (Má nejnižší specificitu.)</p>
 
-<h2>Vlastnosti</h2>
+<h2 class="page__subtitle">Vlastnosti</h2>
 
 <table class="table">
  <tr>
@@ -78,7 +77,7 @@ title: CSS
 </tr>
 <tr>
     <td>Barva pozadí</td>
-    <td>backgroung-color: aliceblue;   (rgb(148, 164, 177))</td>
+    <td>background-color: aliceblue;   (rgb(148, 164, 177))</td>
 </tr>
 <tr>
     <td>Podtržení textu</td>

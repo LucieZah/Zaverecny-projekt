@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="body">
-    <div class="menu__main">
-      <div class="menu__homepage">
-        <button class="button">
-          <a href="/" class="menu__link">HTML a CSS</a>
-        </button>
+  <body>
+    <div class="menu">
+      
+      <div class="menu__group">
+        <a href="/html/" class="menu__link menu__link--active">HTML</a>
+
+        <a href="/css/" class="menu__link menu__link--active">CSS</a>
+        <a href="/responzivni-design/" class="cssmenu__link cssmenu__link--active">Responzivní webdesign</a>
       </div>
-      <div class="menu__href">
-        <button class="button">
-          <a href="/html/" class="menu__link">HTML</a>
-        </button>
-        <button class="button">
-          <a href="/css/" class="menu__link">CSS</a>
-        </button>
+      <div class="menu__item">
+        <a href="/" class="menu__link menu__link--active">Úvodní strana</a>
       </div>
     </div>
 
@@ -32,6 +32,10 @@
     <main class="main">
       {{ content | safe }}
     </main>
-    <footer class="footer">lucie.zahalkova@protonmail.com</footer>
+    <footer class="footer">
+      <a href="mailto: lucie.zahalkova@protonmail.com" class="footer__link"
+        >lucie.zahalkova@protonmail.com</a
+      >
+    </footer>
   </body>
 </html>

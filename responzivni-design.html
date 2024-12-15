@@ -1,0 +1,136 @@
+---
+layout: sablona.njk
+title: Responzivní design
+---
+
+<div class="page__responsive">
+  <h1 class="page__title">Responzivní webdesign</h1>
+
+  <p>
+    Responzivní webdesign je přístup k tvorbě webových stránek, který zajišťuje,
+    že obsah a rozložení stránky se automaticky přizpůsobí různým velikostem a
+    typům zařízení (například mobilům, tabletům, notebookům a desktopům).
+    Využívá technologie jako flexbox, grid a @media queries v CSS, aby zajistil
+    správné zobrazení bez ohledu na rozlišení obrazovky. Cílem je, aby uživatelé
+    měli pohodlný a funkční zážitek na všech zařízeních.
+  </p>
+
+  <h2 class="page__subtitle">Media Query</h2>
+  <p>
+    Media Query je způsob, jak v CSS zařídit, abychom pro různé prostředí mohli
+    prvku nastavit jiné CSS. Nejčastěji reagujeme na šířku okna
+    prohlížeče/zařízení.
+  </p>
+  <div class="example">
+    @media (min-width: 800px) {
+    <pre>
+        css styly;
+    }
+</pre
+    >
+  </div>
+
+  <p>
+    Měli bychom také uvádět, pro jaký typ "média" naše query platí. Možné
+    hodnoty: screen, print, speech, all (all je výchozí hodnota).
+  </p>
+  <div class="example">
+    @media screen and (min-width: 800px){
+    <pre>
+        css styly;
+    }
+</pre
+    >
+  </div>
+
+  <p>Lze používat kombinace:</p>
+
+  <div class="example">
+    @media screen and (min-width: 800px) and (max-width:1200px) and
+    (orientation: landscape){
+    <pre>
+        css styly;
+    }
+</pre
+    >
+  </div>
+
+  <h2 class="page__subtitle">Breakpoint</h2>
+  <p>
+    Breakpoint je bod, ve kterém dochází ke změně layoutu (rozložení) stránky.
+    Breakpointy by se měly stanovovat podle obsahu, tedy změnit ve chvíli, kdy
+    to pro daný obsah dává smysl.
+  </p>
+  <p>Příklad využití breakpoitu ke změně vzhledu i umístění obsahu:</p>
+  Zápis v HTML:
+  <pre>
+    &lt;div class="responsive__box"&gt;
+    &lt;div class="responsive__one">1&lt;/div&gt;
+    &lt;div class="responsive__two">2&lt;/div&gt;
+    &lt;/div&gt;
+  </pre>
+  <div class="ilustration">
+    <pre>
+CSS:
+    .responsive__one,
+    .responsive__two {
+        border: solid 2px var(--primary-color);
+        padding: 50px;
+        margin: 10px 0;
+        font-size: 26px;
+        background-color: #bad4f0;
+    }
+  </pre
+    >
+    <figure class="picture">
+      <img
+        class="image__box"
+        src="/images/box.png"
+        alt="Ukázka zobrazení kódu na stránce"
+      />
+      <figcaption class="image__caption">Ukázka č. 1</figcaption>
+    </figure>
+  </div>
+
+  <p>
+    Pomocí Media Query můžeme rámečky na různých velikostech obrazovky umístit
+    vedle sebe, změnit jejich velikost nebo třeba i barvu:
+  </p>
+  <div class="ilustration">
+    <pre>
+    @media screen and (min-width:1000px){
+        .responsive__box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .responsive__one,
+        .responsive__two {
+            padding: 120px 150px;
+            font-size: 40px;
+            background-color: rgb(245, 149, 245);
+            border: solid 50px violet;
+            margin-right: 10px;
+        }
+    }
+  </pre
+    >
+    <figure class="picture">
+      <img
+        class="image__box"
+        src="/images/box2.png"
+        alt="Ukázka zobrazení kódu na stránce"
+      />
+      <figcaption class="image__caption">Ukázka č. 2</figcaption>
+    </figure>
+  </div>
+
+  <p>
+    Uvedený příklad je možné hned vyzkoušet. Stačí obrazovku nastavit na šířku
+    menší nebo větší než 1000 px a sledovat následující boxy:
+  </p>
+
+  <div class="responsive__box">
+    <div class="responsive__one">1</div>
+    <div class="responsive__two">2</div>
+  </div>
+</div>
