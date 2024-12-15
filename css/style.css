@@ -152,6 +152,10 @@ body {
     border: solid 2px var(--primary-color);
 }
 
+.image__structure {
+    max-width: 100%;
+}
+
 .ilustration {
     margin-bottom: 50px;
 }
