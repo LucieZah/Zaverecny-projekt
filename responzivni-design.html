@@ -6,7 +6,7 @@ title: Responzivní design
 <div class="page__responsive">
   <h1 class="page__title">Responzivní webdesign</h1>
 
-  <p>
+  <p class="page__definition">
     Responzivní webdesign je přístup k tvorbě webových stránek, který zajišťuje,
     že obsah a rozložení stránky se automaticky přizpůsobí různým velikostem a
     typům zařízení (například mobilům, tabletům, notebookům a desktopům).
@@ -22,8 +22,8 @@ title: Responzivní design
     prohlížeče/zařízení.
   </p>
   <div class="example">
+    <pre style="overflow: scroll;">
     @media (min-width: 800px) {
-    <pre>
         css styly;
     }
 </pre
@@ -35,8 +35,8 @@ title: Responzivní design
     hodnoty: screen, print, speech, all (all je výchozí hodnota).
   </p>
   <div class="example">
-    @media screen and (min-width: 800px){
-    <pre>
+    <pre style="overflow: scroll;">
+    @media screen and (min-width: 800px) {
         css styly;
     }
 </pre
@@ -46,9 +46,8 @@ title: Responzivní design
   <p>Lze používat kombinace:</p>
 
   <div class="example">
-    @media screen and (min-width: 800px) and (max-width:1200px) and
-    (orientation: landscape){
-    <pre>
+    <pre style="overflow: scroll;">
+    @media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: landscape) {
         css styly;
     }
 </pre
@@ -65,8 +64,8 @@ title: Responzivní design
   Zápis v HTML:
   <pre>
     &lt;div class="responsive__box"&gt;
-    &lt;div class="responsive__one">1&lt;/div&gt;
-    &lt;div class="responsive__two">2&lt;/div&gt;
+      &lt;div class="responsive__one">1&lt;/div&gt;
+      &lt;div class="responsive__two">2&lt;/div&gt;
     &lt;/div&gt;
   </pre>
   <div class="ilustration">
@@ -80,15 +79,14 @@ CSS:
         font-size: 26px;
         background-color: #bad4f0;
     }
-  </pre
-    >
+  </pre>
     <figure class="picture">
       <img
         class="image__box"
         src="/images/box.png"
         alt="Ukázka zobrazení kódu na stránce"
       />
-      <figcaption class="image__caption">Ukázka č. 1</figcaption>
+      <figcaption>Ukázka č. 1</figcaption>
     </figure>
   </div>
 
@@ -98,7 +96,7 @@ CSS:
   </p>
   <div class="ilustration">
     <pre>
-    @media screen and (min-width:1000px){
+    @media screen and (min-width:1000px) {
         .responsive__box {
             display: flex;
             justify-content: space-evenly;
@@ -120,7 +118,7 @@ CSS:
         src="/images/box2.png"
         alt="Ukázka zobrazení kódu na stránce"
       />
-      <figcaption class="image__caption">Ukázka č. 2</figcaption>
+      <figcaption>Ukázka č. 2</figcaption>
     </figure>
   </div>
 

@@ -6,18 +6,18 @@ title: HTML
 <div class="page__html">
   <h1 class="page__title">HTML</h1>
 
-  <p>
+  <p class="page__definition">
     HTML (HyperText Markup Language) je základní jazyk pro tvorbu webových
     stránek, který určuje strukturu a obsah stránky pomocí značek (tagů).
     Umožňuje přidávat text, obrázky, odkazy a další prvky které prohlížeče
     interpretují a zobrazují uživatelům.
   </p>
 
-
   <h2 class="page__subtitle">Základní struktura stránky</h2>
   <p>
-    Do prázdného souboru index.html zadej <span class="highlight">!</span> a stiskni <span class="highlight">Tab nebo Enter</span> a editor
-    kódu (např. Visual Studio Code) automaticky doplní základní HTML strukturu.
+    Do prázdného souboru index.html zadej <span class="highlight">!</span> a
+    stiskni <span class="highlight">Tab nebo Enter</span> a editor kódu (např.
+    Visual Studio Code) automaticky doplní základní HTML strukturu.
   </p>
 
   <img
@@ -31,8 +31,22 @@ title: HTML
   <p>Může být i víceřádkový.</p>
 
   <h2 class="page__subtitle">Členění obsahu pomocí sémantických značek</h2>
-  Hlavička stránky Sekce Patička &lt;header&gt; ..... &lt;/header&gt;
-  &lt;section&gt; ..... &lt;/section&gt; &lt;footer&gt; ..... &lt;/footer&gt;
+  
+   
+  <table class="table--minor">
+  <tr>
+    <td>Hlavička stránky</td>
+    <td>&lt;header&gt; ..... &lt;/header&gt;</td>
+</tr>
+<tr>
+    <td>Sekce</td>
+    <td>&lt;section&gt; ..... &lt;/section&gt;</td>
+</tr>
+<tr>
+    <td>Patička</td>
+    <td>&lt;footer&gt; ..... &lt;/footer&gt;</td>
+</tr>
+</table>
 
   <h2 class="page__subtitle">Nadpisy</h2>
   <p>&lt;h1&gt;Text nadpisu&lt;/h1&gt;</p>
@@ -45,7 +59,7 @@ title: HTML
   &lt;p&gt;Text odstavce&lt;/p&gt;
 
   <h2 class="page__subtitle">Odkaz</h2>
-  &lt;a href=”www.webovaadresa”&gt;Text odkazu&lt;/a&gt;
+  &lt;a href=”www.webovaadresa.cz”&gt;Text odkazu&lt;/a&gt;
 
   <h2 class="page__subtitle">Odkaz na mail</h2>
   &lt;a href=”mailto:mujmail@mail.com”&gt;Text&lt;/a&gt;
@@ -69,10 +83,10 @@ title: HTML
 
   <h2 class="page__subtitle">Obrázky</h2>
   <p>
-    &lt;img src = “foto.jpg”&gt; Zadej název obrázku včetně cesty (např.
+    &lt;img src=“foto.jpg”&gt; Zadej název obrázku včetně cesty (např.
     obrazky/foto.jpg).
   </p>
-  <p>&lt;img src = “foto.jpg” alt=Podzimní les&gt;</p>
+  <p>&lt;img src=“foto.jpg” alt="Podzimní les"&gt;</p>
 
   <h2 class="page__subtitle">Tabulka</h2>
   <pre>
@@ -95,48 +109,67 @@ title: HTML
 
   <h2 class="page__subtitle">Seznam</h2>
   <div class="list">
-  <div class="list__source">
-    HTML:  
-  <pre>
+    <div class="list__source">
+      HTML:
+      <pre>
   &lt;ul&gt; 
     &lt;li&gt;Bla&lt;/li&gt; 
     &lt;li&gt;Bla bla&lt;/li&gt; 
   &lt;/ul&gt;
-  </pre>
-</div>
-<div class="list__item">
-<svg class="arrow" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-</svg>  <!--@to do: odkontrolovat nazev tridy--> 
-</div>
-<div class="list__result">
-<ul>
-  <li>Bla</li>
-  <li>Bla bla</li>
-</ul>
-</div>
-</div>
-<div class="list">
-  <div class="list__source">
-  CSS:
-  <pre>
+  </pre
+      >
+    </div>
+    <div class="list__item">
+      <svg
+        class="arrow"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#000000"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+        />
+      </svg>
+      <!--@to do: odkontrolovat nazev tridy-->
+    </div>
+    <div class="list__result">
+      <ul>
+        <li>Bla</li>
+        <li>Bla bla</li>
+      </ul>
+    </div>
+  </div>
+  <div class="list">
+    <div class="list__source">
+      CSS:
+      <pre>
   ul {
     list-style:none;
   }
-  </pre>
-</div>
+  </pre
+      >
+    </div>
 
-<div class="list__item">
-<svg class="arrow" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-</svg>  <!--@to do: odkontrolovat nazev tridy--> 
-</div>
-<div class="list__result">
-<ul class="list--nostyle">
-  <li>Bla</li>
-  <li>Bla bla</li>
-</ul>
-</div>
-</div>
-
+    <div class="list__item">
+      <svg
+        class="arrow"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#000000"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+        />
+      </svg>
+      <!--@todo: odkontrolovat nazev tridy-->
+    </div>
+    <div class="list__result">
+      <ul class="list--nostyle">
+        <li>Bla</li>
+        <li>Bla bla</li>
+      </ul>
+    </div>
+  </div>
 </div>

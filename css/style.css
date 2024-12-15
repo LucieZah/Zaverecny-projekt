@@ -1,24 +1,23 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
 :root {
     --primary-color: #001197b5;
+    --secondary-color: rgb(212, 212, 212);
+    --tertiary-color: #d8ecffb5;;
 }
 
-:root {
-    --secondary-color: rgb(212, 212, 212);
-  }
+html,
+body {
+    height: 100%;  
+}
 
-:root {
-    --tertiary-color: #d8ecffb5;;
-  }
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
 
 body {
     background-color: var(--tertiary-color);
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: Roboto Serif, sans-serif;
+    font-family: "Roboto Serif", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -26,11 +25,6 @@ body {
 .main {
     padding: 35px;
     flex: 1;
-}
-
-html,
-body {
-    height: 100%;  
 }
 
 .menu {
@@ -43,14 +37,32 @@ body {
     flex-direction: column;
 }
 
-.foreword__title {
-    color: var(--primary-color);
-    font-size: 60px;
-    text-align: center;
+.menu__link {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    color: #a2a;
+    padding: 10px;
+}
+
+.menu__link--small {
+    font-size: 20px;  
+    font-weight: 400;
+}
+
+.menu__link:hover {
+    border-radius: 5px;
+    background-color: #a2a;
+    color: white;
 }
 
 .foreword {
     text-align: center;
+}
+
+.foreword__title {
+    color: var(--primary-color);
+    font-size: 60px;
 }
 
 .foreword__image {
@@ -65,6 +77,10 @@ body {
     font-size: 50px;
 }
 
+.page__definition {
+    font-size: 20px;
+}
+
 .highlight {
     font-weight: 700;
 }
@@ -77,45 +93,15 @@ body {
     margin-top: 35px;
 }
 
-.image__structure {
-    width: 50%;
-    opacity: 90%;
-}
-
-.menu__link {
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: 500;
-    margin-right: 25px;
-    color: #a2a;
-    padding: 10px;
-}
-
-.menu__link--active:hover {
-    border-radius: 5px;
-    background-color: #a2a;
-    color: white;
-}
-
-.cssmenu__link {
-    text-decoration: none;
-    font-size: 20px;  
-    font-weight: 400;
-    color: #a2a;
-    padding: 10px;
-}
-
-.cssmenu__link--active:hover {
-    border-radius: 5px;
-    background-color: #a2a;
-    color: white;
-}
-
 .table {
     background-color: #bad4f0;
 }
 .table td {
     padding: 15px 25px 15px 15px;
+}
+
+.table--minor td{
+    padding: 0 25px 0 0;
 }
 
 .arrow {
@@ -149,6 +135,7 @@ body {
 
 .example {
     margin-left: 35px;
+    font-weight: 600;
 }
 
 .responsive__one,
@@ -178,7 +165,12 @@ body {
     }
     .menu__group {
         flex-direction: row;
+        align-items: center;
     }
+    .menu__link {
+        margin-right: 25px;
+    }
+
     .responsive__box {
         display: flex;
         justify-content: space-evenly;
